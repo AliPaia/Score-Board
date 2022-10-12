@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    justifycontent: space-evenly
+}
+
+.mainContainer {
+    display: flex;
+    width: 100%;
+}
+
+.profileImageContainer {
+    width: 33%
+}
+
+.profileImage {
+    height: 20vh;
+    width: 15vw;
+}
+
+.projects {
+    display: flex;
+    width: 66%;
+    padding: 0.25rem;
+}
+
+.projectImage {
+    height: 20vh;
+    width: 15vw;
+}
+
+.infoContainer {
+    display: flex;
+    width: 100%
+}
+
+#about {
+    width: 49%
+}
+
+#contact {
+    width: 49%
+}
