@@ -1,21 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Score Board</title>
+
+    <title>Javascript Score Board</title>
+    
 </head>
 
-
-
 <body>
-    <header class="backsplash" style="background-color:rgba(54, 70, 86, 0.267)"
-        <a href="scores.html">Winner Board</a>
-        <span id="timer" class="float-center">Time: 0</span>
+    <header class="p-2" style="background-color: rgb(30, 62, 83)">
+        <strong><a href="scores.html">Winner's Board</a></strong>
+        <span id="timer" class="float-right mr-2">Time: 0</span>
     </header>
-<script src="assets/js/score.js"></script>
+
+    <div class="container mt-5" id="home">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8 text-center">
+                <h1>Let's Talk Javascript!</h1><br>
+                <h5><p>You'll have 60 seconds to answer 5 questions about Javascript basics... <br></h5>
+                    <b><i>NOTE:</i> <br>
+                    </b>Wrong answers will lose 5 seconds on the timer!</p> <br>
+                <button type="button" id="startBtn" class="btn btn-info btn-lg">Take Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 d-none" id="quiz">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8" id="QA-block">
+                <h3 id="questions" class="mb-4">QUESTION</h3>
+                <ul id="answers" class="list-unstyled">
+                    <li class="answerChoice">A) </li>
+                    <li class="answerChoice">B) </li>
+                    <li class="answerChoice">C) </li>
+                    <li class="answerChoice">D) </li>
+                </ul>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 d-none" id="submit-score">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8">
+                <h2>Finished!</h2>
+                <p id="user-score"> </p>
+                <form class="form-group">
+                    <label for="new-score">Enter your name: </label>
+                    <input type="text" id="userName">
+                    <button type="button" class="btn btn-info btn-sm submitBtn">Store Your Score</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="assets/js/questions.js"></script>
+<script src="assets/js/style.js"></script>
 </body>
+
 </html>
